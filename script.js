@@ -5,7 +5,7 @@ var main = document.querySelector("#main");
 var btn = document.querySelector("button");
 btn.addEventListener("click",function(){
     if(uname.value.toLowerCase()=="yedpak" && upass.value.toLowerCase()=="bandri"){
-        window.location=("new/new.html")
+        window.location=("https://saadan-ui.github.io/pagli2/")
     }
 });
 btn.addEventListener("mousedown",function(){
