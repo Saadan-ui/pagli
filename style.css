@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+#card{
+    background-color: rgb(196, 143, 240);
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 50px black;
+}
+#content{
+    width: 100%;
+}
+p{
+    width: 100%;
+    padding: 0 40px;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+input{
+    height: 40px;
+    width: 250px;
+    padding: 0px 20px;
+    background-color: rgb(144, 82, 196);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+button{
+    cursor: pointer;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    background-color: rgb(70, 44, 90);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+input,
+input::placeholder,
+button{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+#bg{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(227, 204, 247);
+    text-align: center;
+}
+#bg img{
+    scale: 1.4;
+}
+#a,
+#c,
+#e{
+    animation: anim1 7s linear infinite;
+}
+@keyframes anim1{
+    0%{
+        margin-left: -50px;
+    }
+    50%{
+        margin-left: 50px;
+    }
+    100%{
+        margin-left: -50px;
+    }
+}
+#b,
+#d{
+    animation: anim2 7s linear infinite;
+}
+@keyframes anim2{
+    0%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-left: -50px;
+    }
+    100%{
+        margin-left: 50px;
+    }
+}
