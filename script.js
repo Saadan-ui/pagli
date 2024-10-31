@@ -1,4 +1,4 @@
-
+alert("Earbud's lagalo or vlome medium rakho");
 var uname = document.querySelector("#uname");
 var upass = document.querySelector("#upass");
 var main = document.querySelector("#main");
